@@ -1,10 +1,12 @@
-DROP TABLE IF EXISTS dbo.HackAThonTest
+USE UGA
 
-CREATE TABLE dbo.HackAThonTest(
+DROP TABLE IF EXISTS dbo.HackAThonTest_jbarberio
+
+CREATE TABLE dbo.HackAThonTest_jbarberio(
 TestColumn VARCHAR(300)
 )
 
-INSERT INTO dbo.HackAThonTest
+INSERT INTO dbo.HackAThonTest_jbarberio
 
 VALUES
 
