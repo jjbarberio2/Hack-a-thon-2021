@@ -1,5 +1,3 @@
-USE UGA
-
 DROP TABLE IF EXISTS dbo.HackAThonTest2_jbarberio
 
 CREATE TABLE dbo.HackAThonTest2_jbarberio(
