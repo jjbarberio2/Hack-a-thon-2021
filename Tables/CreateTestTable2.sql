@@ -8,4 +8,4 @@ INSERT INTO dbo.HackAThonTest2_jbarberio
 
 VALUES
 
-('New Test Value')
+('Newest Test Value')
