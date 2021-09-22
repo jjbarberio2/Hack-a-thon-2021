@@ -1,0 +1,28 @@
+trigger:
+  branches:
+    include:
+    - main
+  batch: True
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: main
+  - repository: PowershellRepo
+    name: Hack-A-Thon-2021-Powershell
+    type: git
+    ref: main    
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    name: SSBSelfHosted
+  steps:
+  - checkout: self
+    clean: true
+  - task: PowerShell@2
+    displayName: auto-deploy new and updated scripts
+    enabled: True
+    inputs:
+      filePath: 'Hack-A-Thon-2021.ps1'
+...
