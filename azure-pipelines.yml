@@ -26,4 +26,4 @@ jobs:
     displayName: auto-deploy new and updated scripts
     enabled: True
     inputs:
-      filePath: 'PowershellRepo/Hack-A-Thon-2021.ps1'
+      filePath: '$(Build.SourcesDirectory)/PowershellRepo/Hack-A-Thon-2021.ps1'
