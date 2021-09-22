@@ -5,7 +5,7 @@ trigger:
   batch: True
 resources:
   repositories:
-  - repository: ScriptRepo
+  - repository: self
     type: github
     ref: main
   - repository: PowershellRepo
