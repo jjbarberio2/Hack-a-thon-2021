@@ -22,7 +22,6 @@ jobs:
     clean: true
   - checkout: PowershellRepo
     clean: true
-  - script: dir
   - task: PowerShell@2
     displayName: auto-deploy new and updated scripts
     enabled: True
