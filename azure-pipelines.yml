@@ -10,8 +10,8 @@ resources:
     ref: main
   - repository: PowershellRepo
     name: jjbarberio2/Hack-A-Thon-2021-Powershell
+    endpoint: jjbarberio2
     type: github
-    ref: main    
 jobs:
 - job: Job_1
   displayName: Agent job 1
@@ -26,5 +26,4 @@ jobs:
     displayName: auto-deploy new and updated scripts
     enabled: True
     inputs:
-      filePath: 'Hack-A-Thon-2021.ps1'
-...
+      filePath: 'PowershellRepo/Hack-A-Thon-2021.ps1'
